@@ -62,10 +62,17 @@ Perform **3 challenges** with each AI. You must use the **same prompt** for all 
 > “Explain this JavaScript function in detail. Add comments as needed.”
 
 ```js
-function mysteryOp(arr) {
-  return arr.reduce((acc, val) => acc ^ val, 0);
-}
-```
+/*function mysteryOp(arr) {
+  // 'reduce' iterates over all elements of the array, accumulating a result
+  // Initial value of the accumulator (acc) is 0
+  return arr.reduce((acc, val) => 
+    acc ^ val,  // XOR (bitwise exclusive OR) operation between accumulator and current value
+    0           // initial value of the accumulator
+  );
+}*/
+
+
+
 
 <br />
 
@@ -73,6 +80,34 @@ function mysteryOp(arr) {
 
 **Prompt:**  
 > “Write a function that changes the text of an HTML element with id `status` when a button is clicked. Use vanilla JavaScript and follow accessibility best practices.”
+/*<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Status Example</title>
+</head>
+<body>
+  <!-- Status text -->
+  <p id="status" aria-live="polite">Current status: Idle</p>
+
+  <!-- Button to change status -->
+  <button id="changeStatusBtn">Update Status</button>
+
+  <script>
+    // Select the button and the status element
+
+    const button = document.getElementById('changeStatusBtn');
+    const status = document.getElementById('status');
+
+    // Add click event listener
+    button.addEventListener('click', () => {
+      // Change the text of the status element
+      status.textContent = 'Current status: Updated';
+    });
+  </script>
+</body>
+</html>*/
 
 <br />
 
@@ -81,25 +116,45 @@ function mysteryOp(arr) {
 **Prompt:**  
 > “Refactor this function to make it readable and efficient. Add meaningful variable names and comments.”
 
-```js
-function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return b}
-```
+/*
+ * Calculates the sum of all even numbers in an array.
+ * @param {number[]} numbers - An array of numbers.
+ * @returns {number} The sum of all even numbers.
+ 
+function sumEvenNumbers(numbers) {
+  let sum = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    const currentNumber = numbers[i];
+
+    // Check if the number is even
+    if (currentNumber % 2 === 0) {
+      sum += currentNumber; // Add it to the sum
+    }
+  }
+
+  return sum;
+}
+
+// Example usage:
+const myArray = [1, 2, 3, 4, 5, 6];
+console.log(sumEvenNumbers(myArray)); // Output: 12*/
 
 <br />
 
 ## :bar_chart: AI Evaluation Table
 
 | AI Tool     | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5) | Tone (1–5) | Notes |
-|-------------|------|----------------|----------------|--------------|-------------|-------|
-| ChatGPT     | 1    |                |                |              |             |       |
-| ChatGPT     | 2    |                |                |              |             |       |
-| ChatGPT     | 3    |                |                |              |             |       |
-| Claude      | 1    |                |                |              |             |       |
-| Claude      | 2    |                |                |              |             |       |
-| Claude      | 3    |                |                |              |             |       |
-| Your Pick   | 1    |                |                |              |             |       |
-| Your Pick   | 2    |                |                |              |             |       |
-| Your Pick   | 3    |                |                |              |             |       |
+|-------------|------|----------------|----------------|--------------|----------|-------|
+| ChatGPT     | 1    |        5       |         5       |         5   |     5    |   20  |
+| ChatGPT     | 2    |        5       |         5       |         3   |     5    |   18  |
+| ChatGPT     | 3    |        5       |         5       |         3   |        5 |   18  |
+| Claude      | 1    |        5        |        5        |        2   |     3    |   15  |
+| Claude      | 2    |        5        |        5        |         2  |      3   |   15  |
+| Claude      | 3    |         5       |        5        |         2  |      3   |   15  |
+| companion   | 1    |          4      |         5       |        3      |    3  |   15  |
+| companion   | 2    |          4      |         5       |         3     |    3  |   15  |
+| companion   | 3    |          5      |         5       |         3     |    3  |   16  |
 
 > 💡 Don’t just give scores write down what stood out.  
 > Was one clearer, but verbose? Another too short but correct?
@@ -162,6 +217,73 @@ Ask all three:
 > “What are 3 common mistakes junior developers make in DOM manipulation, and how can they be avoided?”
 
 Who gave the clearest, most useful guidance?
+/*1. Directly modifying the DOM too often
+
+Mistake: Using multiple DOM updates inside loops or repeatedly accessing the DOM for every single change.
+
+// Inefficient
+const list = document.getElementById('myList');
+for (let i = 0; i < items.length; i++) {
+  const li = document.createElement('li');
+  li.textContent = items[i];
+  list.appendChild(li); // DOM is updated on each iteration
+}
+
+
+Why it’s a problem:
+
+Each DOM update can trigger reflows and repaints, slowing down performance.
+
+How to avoid it:
+
+Use DocumentFragment or build elements in memory first, then append once.
+
+const list = document.getElementById('myList');
+const fragment = document.createDocumentFragment();
+
+items.forEach(item => {
+  const li = document.createElement('li');
+  li.textContent = item;
+  fragment.appendChild(li);
+});
+
+list.appendChild(fragment); // Only one DOM update
+
+2. Not considering element existence / null checks
+
+Mistake: Trying to manipulate elements that may not exist, causing runtime errors.
+
+document.getElementById('nonExistent').textContent = 'Hello'; // Error!
+
+
+How to avoid it:
+
+Always check if the element exists before manipulating it.
+
+const el = document.getElementById('nonExistent');
+if (el) {
+  el.textContent = 'Hello';
+}
+
+3. Overusing inline event handlers
+
+Mistake: Using onclick="..." in HTML instead of properly attaching event listeners.
+
+Why it’s a problem:
+
+Reduces separation of concerns (HTML vs JS).
+
+Harder to manage multiple listeners.
+
+How to avoid it:
+
+Use addEventListener in JS.
+
+const button = document.getElementById('myButton');
+button.addEventListener('click', () => {
+  console.log('Button clicked!');
+});*/
+
 
 <br />
 
