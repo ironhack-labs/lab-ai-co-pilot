@@ -66,6 +66,9 @@ function mysteryOp(arr) {
   return arr.reduce((acc, val) => acc ^ val, 0);
 }
 ```
+<!-- this function iterates through the array,start acc=0 xor operator compares two bits if different return 1, if not return 0,, i asked claude and GPT, i think the GPT gives better response.
+Gemini 3 Pro: the result not that good
+ -->
 
 <br />
 
@@ -73,7 +76,21 @@ function mysteryOp(arr) {
 
 **Prompt:**  
 > “Write a function that changes the text of an HTML element with id `status` when a button is clicked. Use vanilla JavaScript and follow accessibility best practices.”
+```js
+   function setupStatusUpdater() {
+    const btn = document.getElementById('updateStatusBtn');
+    const status = document.getElementById('status');
 
+    btn.addEventListener('click', () => {
+      status.textContent = 'Updated!';
+    });
+  }
+
+  setupStatusUpdater();
+```
+<!-- GPT gives better function that more clear for me.
+CLaude and Gemini: both the code not that good, specially Claude
+-->
 <br />
 
 ### :white_check_mark: Task 3: Refactor Obfuscated Code
@@ -84,6 +101,11 @@ function mysteryOp(arr) {
 ```js
 function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return b}
 ```
+<!-- this calculates the sum of all even numbers
+Gemini 3Pro: the function well explained and easy to understand.
+GPT 5.2: the function well explained and easy to understand.
+Claude 4.5:the function well explained and easy to understand.
+ -->
 
 <br />
 
