@@ -89,17 +89,17 @@ function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return
 
 ## :bar_chart: AI Evaluation Table
 
-| AI Tool     | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5) | Tone (1–5) | Notes |
-|-------------|------|----------------|----------------|--------------|-------------|-------|
-| ChatGPT     | 1    |                |                |              |             |       |
-| ChatGPT     | 2    |                |                |              |             |       |
-| ChatGPT     | 3    |                |                |              |             |       |
-| Claude      | 1    |                |                |              |             |       |
-| Claude      | 2    |                |                |              |             |       |
-| Claude      | 3    |                |                |              |             |       |
-| Your Pick   | 1    |                |                |              |             |       |
-| Your Pick   | 2    |                |                |              |             |       |
-| Your Pick   | 3    |                |                |              |             |       |
+| AI Tool     | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5)    | Tone (1–5) | Notes |
+|-------------|------|---------------|----------------|----------------|--------------|-------|
+| ChatGPT     | 1    |        5      |      4       |      4         |      4       | Clear explanations and well structured.  |
+| ChatGPT     | 2    |        4      |      4       |      4         |      4       |Good DOM example and going step-by-step.  |
+| ChatGPT     | 3    |        5      |      5       |      4         |      4       |Very readable code with comments.But verbose.   |
+| Claude      | 1    |        2      |      2       |      2         |      2       |Explanation was to short and confusing.   |
+| Claude      | 2    |        2      |      2       |      3         |      3       |Missed important details. |
+| Claude      | 3    |        1      |      2       |      3         |      2       |Was incomplete and hard to follow.   |
+| Gemini      | 1    |        3      |      3       |      4         |      4       |Clear explanation also but not very detailed.   |
+| Gemini      | 2    |        4      |      3       |      4         |      4       |Good DOM example but more simpler than ChatGPT.   |
+| Gemini      | 3    |        3      |      4       |      4         |      3       |Acceptable but not optimal.   |
 
 > 💡 Don’t just give scores write down what stood out.  
 > Was one clearer, but verbose? Another too short but correct?
