@@ -89,17 +89,17 @@ function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return
 
 ## :bar_chart: AI Evaluation Table
 
-| AI Tool     | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5) | Tone (1–5) | Notes |
-|-------------|------|----------------|----------------|--------------|-------------|-------|
-| ChatGPT     | 1    |                |                |              |             |       |
-| ChatGPT     | 2    |                |                |              |             |       |
-| ChatGPT     | 3    |                |                |              |             |       |
-| Claude      | 1    |                |                |              |             |       |
-| Claude      | 2    |                |                |              |             |       |
-| Claude      | 3    |                |                |              |             |       |
-| Your Pick   | 1    |                |                |              |             |       |
-| Your Pick   | 2    |                |                |              |             |       |
-| Your Pick   | 3    |                |                |              |             |       |
+| AI Tool     | Task | Clarity (1–5)  | Accuracy (1–5) | Speed (1–5)  | Tone (1–5)  | Notes                                |
+|-------------|------|----------------|----------------|--------------|-------------|--------------------------------------|
+| ChatGPT     | 1    |      5         |       5        |      5       |     5       | Very clear and precise               |
+| ChatGPT     | 2    |      4         |       5        |      5       |     5       | the Js part was only fractional      |
+| ChatGPT     | 3    |      5         |       5        |      5       |     5       | very understandable and clear answer |
+| Claude      | 1    |      4         |       5        |      5       |     5       | clear                                |
+| Claude      | 2    |      4         |       5        |      5       |     5       | the html part was only fractional    |
+| Claude      | 3    |      5         |       5        |      5       |     5       | very understandable and clear answer |
+| Gemini      | 1    |      5         |       5        |      5       |     5       | clear and precise                    |
+| Gemini      | 2    |      3         |       5        |      5       |     5       | not clear enough                     |
+| Gemini      | 3    |      3         |       5        |      5       |     5       | not clear enough                     |
 
 > 💡 Don’t just give scores write down what stood out.  
 > Was one clearer, but verbose? Another too short but correct?
