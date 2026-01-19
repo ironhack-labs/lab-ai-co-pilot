@@ -89,17 +89,18 @@ function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return
 
 ## :bar_chart: AI Evaluation Table
 
-| AI Tool     | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5) | Tone (1–5) | Notes |
-|-------------|------|----------------|----------------|--------------|-------------|-------|
-| ChatGPT     | 1    |                |                |              |             |       |
-| ChatGPT     | 2    |                |                |              |             |       |
-| ChatGPT     | 3    |                |                |              |             |       |
-| Claude      | 1    |                |                |              |             |       |
-| Claude      | 2    |                |                |              |             |       |
-| Claude      | 3    |                |                |              |             |       |
-| Your Pick   | 1    |                |                |              |             |       |
-| Your Pick   | 2    |                |                |              |             |       |
-| Your Pick   | 3    |                |                |              |             |       |
+| AI Tool  | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5) | Tone (1–5) | Notes |
+|---------|------|---------------|----------------|-------------|------------|-------|
+| ChatGPT | 1    | 4             | 5              | 5           | 4          | Clear explanation of XOR with an example, a bit casual but very understandable. |
+| ChatGPT | 2    | 4             | 4              | 5           | 4          | Correct DOM code, but only minimal mention of accessibility (no real explanation). |
+| ChatGPT | 3    | 4             | 5              | 5           | 4          | Good refactor with better names, but very few comments and no alternative approaches. |
+| Claude  | 1    | 5             | 5              | 4           | 4          | Very precise explanation of XOR reduction, structured and concise, slightly less “friendly” than ChatGPT. |
+| Claude  | 2    | 5             | 5              | 4           | 4          | Clean solution with `aria` usage and named handler; clearly cares about accessibility best practices. |
+| Claude  | 3    | 5             | 5              | 4           | 4          | Refactor uses `for...of`, clear naming, and short but focused comments on intent. Feels very readable. |
+| Gemini  | 1    | 4             | 5              | 4           | 3          | Correct explanation and comments, but a bit verbose and slightly repetitive in how it explains XOR. |
+| Gemini  | 2    | 4             | 4              | 4           | 3          | Works fine; mentions accessibility but mixes a lot of text with code, which makes it feel a bit cluttered. |
+| Gemini  | 3    | 4             | 5              | 4           | 3          | Good refactor with comments; sometimes over-explains obvious parts of the loop, making it longer than needed. |
+
 
 > 💡 Don’t just give scores write down what stood out.  
 > Was one clearer, but verbose? Another too short but correct?
@@ -162,6 +163,49 @@ Ask all three:
 > “What are 3 common mistakes junior developers make in DOM manipulation, and how can they be avoided?”
 
 Who gave the clearest, most useful guidance?
+
+4️⃣ Bonus Round – Junior DOM Mistakes Question
+
+Prompt (same to all three):
+
+“What are 3 common mistakes junior developers make in DOM manipulation, and how can they be avoided?”
+
+Simulated Comparison
+
+You don’t need the full raw outputs for the lab, just a summary for your report / notes:
+
+ChatGPT
+Listed mistakes like:
+
+Using innerHTML unnecessarily (risking XSS / performance).
+
+Not waiting for DOMContentLoaded before querying elements.
+
+Not cleaning up event listeners.
+Gave short fixes and examples. Clear and practical.
+
+Claude
+Gave three well-structured mistakes such as:
+
+Querying elements inefficiently or repeatedly.
+
+Mixing presentation logic and data logic in DOM code.
+
+Ignoring accessibility and semantics.
+Each point had a concise explanation + how to avoid it. Very “guide-like”.
+
+Gemini
+Listed similar mistakes, but with longer paragraphs of explanation and more context around each issue (e.g. how the rendering pipeline works, how event propagation works). Helpful but quite verbose.
+
+Who gave the clearest, most useful guidance?
+
+I’d say ChatGPT and Claude both performed very well here.
+
+ChatGPT was the clearest for quick practical advice.
+
+Claude was the clearest if you want a structured, “best practices” view.
+
+For fast learning and immediate application, I’d give the edge to ChatGPT.
 
 <br />
 
