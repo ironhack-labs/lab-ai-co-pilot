@@ -1,0 +1,53 @@
+AI Assistant Trials – Final Report
+
+AI Tool	Task	Clarity (1–5)	Accuracy (1–5)	Speed (1–5)	Tone (1–5)	Notes
+ChatGPT	1					4           4                   5           5       18
+ChatGPT	2					5           5                   4           5       19
+ChatGPT	3					3           4                   4           4       15
+Claude	1					3           3                   5           5       16
+Claude	2					4           4                   5           3       16
+Claude	3					4           4                   5           4       15
+Your Perplexity	1	4				    5                   4           5       18
+Your Perplexity	2	3           3                   5           4       15 
+Your Perplexity	3	5           5                   5           5       20
+
+
+🏆 My Pick:
+[Perplexity]
+
+✅ Pros & Cons
+ChatGPT
+✅ Answers are more detailed and it offer suggestions and alternatives at the end of the prompt 
+❌ Long answers, redundant information sometimes
+Claude
+✅ Neutral
+❌ This AI give good answers no more. It works fast but I don't like the user interface
+Perplexity
+✅ Epurate interface and good explanation
+❌ Give brief answers and don't offer more suggested questions
+
+
+📌 Task-by-Task Highlights
+Task 1: I learn about XOR, Perplexity and ChatGPT gave me good explanations
+Task 2: ChatGPT was the best for this prompt. I learn how and why we use role & aria-live
+Task 3: It allows me to review the different ways to write functions
+
+
+
+# Final Thoughts
+
+It was good to compare those AI. My first AI Tool ever used was Perplexity. I was using it a bit before for daily research. I then used mainly ChatGPT beacause of his reputation and I think it has a better understanding.
+
+# Which AI would you trust in a real project? Why?
+
+I would trust Perplexity and ChatGPT the same way but have a sligth preference for ChatGPT. The reason why is it give more elaborated answers and anticipate the next questions. At the end it is faster and smarter but I think it's also due to our utilisation. I guess more we use an AI more we give it the opportunity to grow its intelligence. 
+
+# Was there a big difference in explanation quality?
+All of AI used today gave similar answers. 
+
+# Which one matched your communication style?
+I didn't like Claude's interface which make the research less interesting.
+Perplexity was good.
+
+
+
