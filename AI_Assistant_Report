@@ -1,0 +1,74 @@
+My pick: 
+
+ChatGPT
+
+
+
+Pros & Cons
+
+ChatGPT
+
+- Pros: ChatGPT me da varias soluciones, no se ciñe únicamente a darme lo que le pido, sino que va un poco más allá dandome diferentes alternativas. Es claramente el que más información me da, con explicaciones largas paso a paso.
+- Cons: Da demasiada información, hay veces que le pides algo y se extiende demasiado.
+
+
+Claude
+
+- Pros: Es el que más va al grano, te da la solución y te explica muy resumidamente como lo ha hecho.
+- Cons: Tengo que pedirle especificamente que me explique lo que ha hecho, ya que sino lo hace muy por encima y no termino de entenderlo del todo.
+
+
+Gemini
+
+- Pros: Más o menos a la par que ChatGPT, lo bueno de Gemini es que también puede generar imagenes explicativas que me han ayudado a entender mejor los resultados que me daba.
+- Cons: No lo considero una contra para Gemini, pero si que quizá podría darme más de una solución.
+
+
+
+AI Evaluation table
+
+AI Tool	Task	Clarity (1–5)	Accuracy (1–5)	Speed (1–5)	Tone (1–5)	Notes
+ChatGPT	1	    	4			       5            3           5       Muy visual, fácil de entender.
+ChatGPT	2			4		           5            3           4       Ha hecho todo lo que se le ha pedido, incluso me ha incluido un resumen.
+ChatGPT	3			5		           5            3           5       Ha incluido humor en la explicación, y aparte de explicarlo todo en los comentarios, también me ha hecho una tabla con todas las mejoras aplicadas.
+Claude	1			3		           5            5           3       Nada destacable, se ha ceñido a lo que le he pedido, me hubiera gustado algo más de detalle.
+Claude	2			3		           5            5           3       Fácil de leer, directo al grano.
+Claude	3			4		           5            5           2       Muy resumido, me ha faltado información.
+Gemini	1			5		           5            5           5       Me ha gustado mucho que incluyera imagenes en la explicación, me ha servido para entender mejor lo que explicaba.
+Gemini	2			4		           5            5           4       Fácil de entender, pero falta más información, simplemente ha generado el código que le he pedido.
+Gemini	3			4		           5            5           4       Me ha explicado detalladamente todos los cambios.
+
+
+
+Task-by-task Highlights
+
+- Task 1: ChatGPT me ha dado la información muy detallada paso por paso, igual que Gemini, con la diferencia de que Gemini también me ha incluido imagenes demostrativas. Por otro lado, Claude, a pesar de haberle pedido que explicara la función en detalle, considero que se ha quedado algo corto, aunque, el punto a favor de Claude, es que es el que más comentarios ha puesto en el código, lo que hace algo más sencillo de entender.
+
+- Task 2: Igual que en la tarea 1, ChatGPT ha desarrollado mucho mejor lo que se le ha pedido, incluyendo varios ejemplos y varias formas de resolver el problema, aparte de haberme explicado en detalle paso por paso como lo ha hecho. Por su parte, Gemini ha ido directo al grano y me ha pasado el código, haciendome un breve resumen de las decisiones que ha tomado. Claude, en este caso, ha sido algo más completo que Gemini, ya que aparte de darme el código, me ha explicado bastante bien el por qué de su razonamiento. En esta tarea ya me ha quedado claro que ChatGPT es el ganador.
+
+- Task 3: ChatGPT vuelve a ganar, ya que primero me ha hecho un analisis del código a refactorizar, explicándome qué es lo que hace, y luego dándome el código refactorizado, dandome varias versiones, una más eficiente y moderna, donde incluye el for of, y una más compacta. Gemini, en esta tarea, se ha esforzado un poco más y me ha explicado con algo más de detalle sus acciones, incluso me ha dado una opción más clasica por si la preferia. Claude ha vuelto a ir directo al grano, explicandome resumidamente los cambios que ha realizado.
+
+
+
+Surprises & bugs
+
+- No esperaba que Gemini usara imagenes como ejemplos, me ha sorprendido para bien.
+- No he encontrado ningún bug, lo único a destacar es que ChatGPT a veces tardaba un poco más de lo habitual en cargar la respuesta.
+
+
+
+Final thoughts
+
+- Creo que elegiria o ChatGPT o Gemini, ambos me han parecido bastante útiles. Sin embargo, para un proyecto real creo que elegiria ChatGPT, ya que ha sido el que más opciones me ha dado, y considero que en un entorno de trabajo tener varias opciones o recursos es fundamental para poder trabajar mejor.
+
+
+
+Reflection prompts
+
+- Which AI helped you learn better? ChatGPT sin duda, es el que más información da, además lo explica todo paso por paso.
+
+- Was there a big difference in explanation quality? Sobretodo los ejemplos y las diferentes opciones, a descatar negativamente Claude que no me ha dado ningún ejemplo.
+
+- Which one matched your communication style? ChatGPT es el que más se ha amoldado a mi estilo de comunicación, incluyendo incluso cierto sentido del humor.
+
+- How might you use different AIs for different types of work? Para cosas más complejas o que aun no conozco, lo usaría para que me lo explicara de manera detallada. También podría ser útil en problemas pequeños, para que genere códigos sencillos que me ahorrarian tiempo de trabajo. Otra opción podría ser que me generara documentos, tablas de datos, etc. También podría ser muy útil para verificar código, ya que puede encontrar fallos tontos rápidamente.
