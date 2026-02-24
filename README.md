@@ -89,17 +89,17 @@ function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return
 
 ## :bar_chart: AI Evaluation Table
 
-| AI Tool     | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5) | Tone (1–5) | Notes |
+| AI Tool     | Task | Clarity (1–5)  | Accuracy (1–5) | Speed (1–5)  | Tone (1–5)  | Notes |
 |-------------|------|----------------|----------------|--------------|-------------|-------|
-| ChatGPT     | 1    |                |                |              |             |       |
-| ChatGPT     | 2    |                |                |              |             |       |
-| ChatGPT     | 3    |                |                |              |             |       |
-| Claude      | 1    |                |                |              |             |       |
-| Claude      | 2    |                |                |              |             |       |
-| Claude      | 3    |                |                |              |             |       |
-| Your Pick   | 1    |                |                |              |             |       |
-| Your Pick   | 2    |                |                |              |             |       |
-| Your Pick   | 3    |                |                |              |             |       |
+| ChatGPT     | 1    |              5 |              5 |            5 |           5 |     Gave the answer fast and clear      |
+| ChatGPT     | 2    |              5 |              5 |            5 |           5 |     Gives a good and clear explanation.  |
+| ChatGPT     | 3    |              5 |              5 |            5 |           5 |     It gives a basic answer and also adds a more complex version.  |
+| Claude      | 1    |              5 |              5 |            4 |           5 |     Gave the answer fast and clear too  |
+| Claude      | 2    |              4 |              5 |            4 |           5 |     I see the aswer better in the others  |
+| Claude      | 3    |              4 |              5 |            4 |           5 |     It gives a basic answer and also adds a more complex version.  |
+| Gemini      | 1    |              5 |              5 |            4 |           5 |     Gave the answer fast and clear too  |
+| Gemini      | 2    |              5 |              5 |            4 |           5 |     Gives a good and clear explanation.  |
+| Gemini      | 3    |              5 |              5 |            4 |           5 |     It gives a basic answer and also adds a more complex version.  |
 
 > 💡 Don’t just give scores write down what stood out.  
 > Was one clearer, but verbose? Another too short but correct?
@@ -115,32 +115,35 @@ Create a Markdown report in your project folder with the following sections:
 # AI Assistant Trials – Final Report
 
 ## :trophy: My Pick:
-[Name of AI]
+[Geminy]
 
 ## :white_check_mark: Pros & Cons
 
 ### ChatGPT
-- :white_check_mark: [Insert good things]
-- :x: [Insert limitations]
+- :white_check_mark: Is very fast and give clear explanations
+- :x: If you want to give it a image, you can only do it a few times
 
 ### Claude
-- :white_check_mark:
-- :x:
+- :white_check_mark: Is clear and give great explanations
+- :x: I dont really like the style
 
 ### [Your Pick]
-- :white_check_mark:
-- :x:
+- :white_check_mark: Is clear, give great explanations and dont have a limit for images
+- :x: Some times is a little slow
 
 ## :pushpin: Task-by-Task Highlights
 - Task 1: [Summary of performance]
 - Task 2: ...
 - Task 3: ...
 
+In General all of them give great answers, but chatGPT was faster
+
 ## :mag: Surprises & Bugs
 - [Mention hallucinations, bugs, or bad suggestions]
 
 ## Final Thoughts
 Which AI would you trust in a real project? Why?
+I prefer Geminy because it's the one I've had less problems with
 
 <br />
 
@@ -149,9 +152,13 @@ Which AI would you trust in a real project? Why?
 Write in your journal or digital notebook:
 
 - Which AI helped *you* learn better?
+Geminy
 - Was there a big difference in explanation quality?
+Thes no a big difference
 - Which one matched your communication style?
+Geminy
 - How might you use different AIs for different types of work?
+Looking for the one that matches with the type of work
 
 <br />
 
