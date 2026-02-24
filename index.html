@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Accessible Button Example</title>
+	</head>
+	<body>
+		<p id="status" aria-live="polite">Status: Waiting for action...</p>
+
+		<button id="updateButton">Update Status</button>
+
+		<script>
+			// Select the button and status element
+			const button = document.getElementById("updateButton");
+			const status = document.getElementById("status");
+
+			// Function to change the status text
+			function updateStatus() {
+				status.textContent = "Status: Updated successfully!";
+			}
+
+			// Attach click event listener
+			button.addEventListener("click", updateStatus);
+		</script>
+	</body>
+</html>
+
+<--cloude anser->
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Status Update</title>
+	</head>
+	<body>
+		<!-- aria-live="polite" hace que los lectores de pantalla anuncien el cambio -->
+		<p id="status" aria-live="polite" aria-atomic="true">Estado inicial</p>
+
+		<!-- type="button" evita que el botón haga submit accidentalmente en un form -->
+		<button type="button" onclick="updateStatus()">Actualizar estado</button>
+
+		<script>
+			function updateStatus() {
+				const statusEl = document.getElementById("status");
+
+				statusEl.textContent = "¡Estado actualizado correctamente!";
+			}
+		</script>
+	</body>
+</html>
