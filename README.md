@@ -56,6 +56,7 @@ git push origin master
 
 Perform **3 challenges** with each AI. You must use the **same prompt** for all three.
 
+
 ### :white_check_mark: Task 1: Explain a Function
 
 **Prompt:**  
@@ -64,8 +65,11 @@ Perform **3 challenges** with each AI. You must use the **same prompt** for all 
 ```js
 function mysteryOp(arr) {
   return arr.reduce((acc, val) => acc ^ val, 0);
+
+  // Esta función toma un array de números y devuelve el resultado de aplicar la operación XOR a todos los elementos. El valor inicial del acumulador es 0, por lo que el resultado final será el número que aparece un número impar de veces en el array. Si todos los números aparecen un número par de veces, el resultado será 0.
 }
 ```
+
 
 <br />
 
@@ -73,6 +77,21 @@ function mysteryOp(arr) {
 
 **Prompt:**  
 > “Write a function that changes the text of an HTML element with id `status` when a button is clicked. Use vanilla JavaScript and follow accessibility best practices.”
+```js
+// HTML:  
+// <button id="updateStatus">Update Status</button>
+// <p id="status">Current status: Unknown</p>
+// JavaScript:
+
+document.getElementById('updateStatus').addEventListener('click', function() {
+  const statusElement = document.getElementById('status');
+  statusElement.textContent = 'Current status: Updated';
+  statusElement.setAttribute('aria-live', 'polite'); // Accessibility: Announce changes to screen readers
+});
+
+```   
+
+
 
 <br />
 
@@ -83,6 +102,19 @@ function mysteryOp(arr) {
 
 ```js
 function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return b}
+
+// Refactored version:
+function sumEvenNumbers(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) { // Check if the number is even
+      sum += array[i]; // Add it to the sum
+    }
+  }
+  return sum; // Return the total sum of even numbers
+}
+
+
 ```
 
 <br />
@@ -91,15 +123,16 @@ function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return
 
 | AI Tool     | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5) | Tone (1–5) | Notes |
 |-------------|------|----------------|----------------|--------------|-------------|-------|
-| ChatGPT     | 1    |                |                |              |             |       |
-| ChatGPT     | 2    |                |                |              |             |       |
-| ChatGPT     | 3    |                |                |              |             |       |
-| Claude      | 1    |                |                |              |             |       |
-| Claude      | 2    |                |                |              |             |       |
-| Claude      | 3    |                |                |              |             |       |
-| Your Pick   | 1    |                |                |              |             |       |
-| Your Pick   | 2    |                |                |              |             |       |
-| Your Pick   | 3    |                |                |              |             |       |
+| ChatGPT     | 1    |      5         |       5        |      5       |      5      |    Clear explanation of the XOR operator and reduce method; added helpful comments and examples.    |
+| ChatGPT     | 2    |      5         |       5        |      5       |      5      | Provided accessible DOM solution with event listeners and semantic best practices.      |
+| ChatGPT     | 3    |      5         |       5        |      5       |      5      |   Refactored code with meaningful names and comments; efficient and easy to understand.    |
+| Claude      | 1    |      5         |       4        |      4       |      4      |   Very clear breakdown of reduce logic, but explanation was more verbose than necessary.    |
+| Claude      | 2    |      5         |       4        |      4       |      4      | Emphasized accessibility and structure; required minor adjustments to simplify.      |
+| Claude      | 3    |      5         |       4        |      4       |      4      |  Improved readability and structure, but solution was slightly longer than needed.     |
+| Copilot     | 1    |      4         |       5        |      4       |      4      |    Suggested correct explanation and comments, but less detailed context.   |
+| Copilot     | 2    |      5         |       5        |      4       |      4      |   Generated functional DOM code quickly; required manual accessibility review.    |
+| Copilot     | 3    |      5         |       5        |      4       |      4      |    Fast refactoring with clear variable names; minimal explanation provided.   |
+
 
 > 💡 Don’t just give scores write down what stood out.  
 > Was one clearer, but verbose? Another too short but correct?
