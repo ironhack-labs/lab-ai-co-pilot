@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 2: DOM Manipulation</title>
+</head>
+<body>
+  <h1>Task 2</h1>
+  <button id="changeButton" aria-describedby="status">Change Status</button>
+  <div id="status" role="status" aria-live="polite">Initial status</div>
+  <script>
+    document.getElementById('changeButton').addEventListener('click', function() {
+      document.getElementById('status').textContent = 'Status changed!';
+    });
+  </script>
+</body>
+</html>
