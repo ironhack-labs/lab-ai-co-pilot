@@ -74,6 +74,38 @@ function mysteryOp(arr) {
 **Prompt:**  
 > “Write a function that changes the text of an HTML element with id `status` when a button is clicked. Use vanilla JavaScript and follow accessibility best practices.”
 
+// the code is here 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Status Update</title>
+</head>
+<body>
+
+  <!-- Status text -->
+  <p id="status" aria-live="polite">
+    Current status: Not updated
+  </p>
+
+  <!-- Button -->
+  <button id="updateBtn">
+    Update Status
+  </button>
+
+  <script>
+    function updateStatus() {
+      const statusElement = document.getElementById('status');
+      statusElement.textContent = 'Current status: Updated successfully!';
+    }
+
+    document
+      .getElementById('updateBtn')
+      .addEventListener('click', updateStatus);
+  </script>
+
+</body>
+</html>
 <br />
 
 ### :white_check_mark: Task 3: Refactor Obfuscated Code
@@ -86,6 +118,7 @@ function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return
 ```
 
 <br />
+
 
 ## :bar_chart: AI Evaluation Table
 
