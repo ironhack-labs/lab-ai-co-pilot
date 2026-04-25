@@ -89,17 +89,14 @@ function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return
 
 ## :bar_chart: AI Evaluation Table
 
-| AI Tool     | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5) | Tone (1–5) | Notes |
-|-------------|------|----------------|----------------|--------------|-------------|-------|
-| ChatGPT     | 1    |                |                |              |             |       |
-| ChatGPT     | 2    |                |                |              |             |       |
-| ChatGPT     | 3    |                |                |              |             |       |
-| Claude      | 1    |                |                |              |             |       |
-| Claude      | 2    |                |                |              |             |       |
-| Claude      | 3    |                |                |              |             |       |
-| Your Pick   | 1    |                |                |              |             |       |
-| Your Pick   | 2    |                |                |              |             |       |
-| Your Pick   | 3    |                |                |              |             |       |
+| AI Tool   | Task | Clarity (1–5) | Accuracy (1–5) | Speed (1–5) | Tone (1–5) | Notes |
+|------------|------|----------------|----------------|--------------|-------------|-------|
+| ChatGPT    | 1    | 5              | 5              | 5            | 5           | Very clear explanation |
+| ChatGPT    | 2    | 5              | 5              | 5            | 5           | Clean DOM solution |
+| ChatGPT    | 3    | 5              | 5              | 5            | 5           | Good refactor |
+| Claude     | 1    | ...            | ...            | ...          | ...         | ... |
+| Claude     | 2    | ...            | ...            | ...          | ...         | ... |
+| Claude     | 3    | ...            | ...            | ...          | ...         | ... |
 
 > 💡 Don’t just give scores write down what stood out.  
 > Was one clearer, but verbose? Another too short but correct?
@@ -146,30 +143,35 @@ Which AI would you trust in a real project? Why?
 
 ##  Reflection Prompts
 
-Write in your journal or digital notebook:
+- ChatGPT helped me learn better because it was clear and easy to understand.
+- Claude gave more detailed answers but sometimes too long.
+- The main difference was explanation style, not correctness.
+- I prefer ChatGPT for learning and coding practice.
+- I would use different AIs depending on the task.
 
-- Which AI helped *you* learn better?
-- Was there a big difference in explanation quality?
-- Which one matched your communication style?
-- How might you use different AIs for different types of work?
+---
 
-<br />
+##  Bonus Round
 
-## :microscope: Bonus Round
-
-Ask all three:
+I asked all three AI tools:
 
 > “What are 3 common mistakes junior developers make in DOM manipulation, and how can they be avoided?”
+
+- ChatGPT: Clear, simple, and practical explanation.
+- Claude: Very detailed but slightly long and harder to scan quickly.
+- My Pick: ChatGPT because it was the easiest to understand and apply.
+
+ Final conclusion: ChatGPT gave the clearest and most useful guidance overall.
 
 Who gave the clearest, most useful guidance?
 
 <br />
 
-## :white_check_mark: Submission Checklist
+## ✔ Submission Checklist
 
-- [ ] Filled-out evaluation table  
-- [ ] AI_Assistant_Report.md with a clear winner  
-- [ ] Reflections written  
+- [x] Filled-out evaluation table  
+- [x] AI_Assistant_Report.md with a clear winner  
+- [x] Reflections written  
 
 <br />
 
