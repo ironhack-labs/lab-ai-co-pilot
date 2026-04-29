@@ -1,9 +1,9 @@
+@@ -1,182 +0,0 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
 # LAB | The AI Assistant Trials, who’s the Best Co-Pilot?
 
 > :test_tube: Focus: Critical AI comparison, Prompt Engineering, Output Review
-
 ## :brain: Scenario
 
 Your dev team is considering integrating an AI assistant into your daily workflow, but which one fits best?
@@ -60,7 +60,6 @@ Perform **3 challenges** with each AI. You must use the **same prompt** for all 
 
 **Prompt:**  
 > “Explain this JavaScript function in detail. Add comments as needed.”
-
 ```js
 function mysteryOp(arr) {
   return arr.reduce((acc, val) => acc ^ val, 0);
@@ -73,14 +72,12 @@ function mysteryOp(arr) {
 
 **Prompt:**  
 > “Write a function that changes the text of an HTML element with id `status` when a button is clicked. Use vanilla JavaScript and follow accessibility best practices.”
-
 <br />
 
 ### :white_check_mark: Task 3: Refactor Obfuscated Code
 
 **Prompt:**  
 > “Refactor this function to make it readable and efficient. Add meaningful variable names and comments.”
-
 ```js
 function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return b}
 ```
@@ -103,7 +100,6 @@ function r(a){let b=0;for(let i=0;i<a.length;i++){if(a[i]%2===0){b+=a[i]}}return
 
 > 💡 Don’t just give scores write down what stood out.  
 > Was one clearer, but verbose? Another too short but correct?
-
 <br />
 
 ## :receipt: Your Recommendation Report
@@ -160,7 +156,6 @@ Write in your journal or digital notebook:
 Ask all three:
 
 > “What are 3 common mistakes junior developers make in DOM manipulation, and how can they be avoided?”
-
 Who gave the clearest, most useful guidance?
 
 <br />
@@ -178,5 +173,4 @@ Who gave the clearest, most useful guidance?
 Well done, dev! You’ve tested, documented, and decided.
 
 > Remember: These tools are powerful but **you** are the architect of your process.
-
 Choose wisely. :man_technologist: :woman_technologist:
